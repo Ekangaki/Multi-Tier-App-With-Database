@@ -8,11 +8,11 @@
 		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.ekangaki</groupId>
 	<artifactId>bankapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bankapp</name>
-	<description>Banking Web Application</description>
+	<description>Nguti Banking Web Application</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -68,7 +68,19 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+        <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>Nguti-Banking-Web-App-release Releases Nexus Repo</name>
+        <url>http://54.175.66.120:8081/repository/Release-Ekangaki-Repo/</url>
+    </repository>
 
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>Nguti-Banking-Web-App-snapshot Snapshots Nexus Repo</name>
+        <url>http://54.175.66.120:8081/repository/Snapshot-Ekangaki-Repo/</url>
+    </snapshotRepository>
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
